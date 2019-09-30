@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/activity_top2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ></include>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.github.jdsjlzx.recyclerview.LuRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/tv_huidu"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_gravity="right|bottom"
+        android:textSize="12dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="124dp"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/hbfb2x"
+        android:textColor="#ffffff"
+        android:text="发布"
+        />
+</FrameLayout>
+</LinearLayout>

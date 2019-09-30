@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/tvText_cancel"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:textColor="#36C17D"
+            android:text="取消"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvText_confirm"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textColor="#36C17D"
+            android:text="确定"
+            android:layout_alignParentRight="true"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <com.mofanstore.util.city.CityPicker
+        android:id="@+id/cpCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

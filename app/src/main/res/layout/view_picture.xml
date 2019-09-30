@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:background="@drawable/popwindow_shape"
+        >
+        <TextView
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="#383838"
+            android:textSize="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="#dedede"/>
+        <TextView
+            android:id="@+id/btnGallery"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="#383838"
+            android:text="从相册选择"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/popwindow_shape"
+        android:textColor="#FF6032"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="15dp"/>
+
+</LinearLayout>

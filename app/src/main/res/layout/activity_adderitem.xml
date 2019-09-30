@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    >
+    <LinearLayout
+        android:id="@+id/lv_adder_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ipd_baiseback"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/detail_adder"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#FFF">
+
+            <LinearLayout
+                android:id="@+id/lladd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/nametelee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="皇甫正雄 158****5427"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/moren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@mipmap/huifubtm"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="默认"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nameadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lladd"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:text=""
+
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/name_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/nameadd"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="中国 上海 上海市 青浦区 华徐公路888号1号楼2楼IPD"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+
+            <ImageView
+                android:id="@+id/cart_zuo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/dzscan2x" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

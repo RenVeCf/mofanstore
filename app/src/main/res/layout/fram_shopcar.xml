@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F3F3F"
+        >
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="购物车"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxEms="10"
+            android:ellipsize="end"
+            />
+        <FrameLayout
+            android:id="@+id/commit"
+            android:layout_width="49dp"
+            android:layout_gravity="right"
+            android:layout_height="49dp">
+            <TextView
+                android:id="@+id/tv_commiy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管理"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flshop"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:id="@+id/tvnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center|left"
+            android:text="共3件宝贝"
+            android:textColor="#333333"
+            android:textSize="13dp" />
+        <ListView
+            android:id="@+id/ipd_cart_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1dp"
+            android:divider="#F5F5F5"
+            android:layout_marginBottom="50dp"
+            ></ListView>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="#FFFFFF"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F2F2F2"
+                ></View>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:id="@+id/cb_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#999999"
+                    style="@style/check_agree1"
+                    android:text="全选"
+                    android:checked="false" />
+                <TextView
+                    android:id="@+id/cart_Count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="合计: ¥188.00"
+                    android:layout_gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                >
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:text="结算"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/gwcsc2x"
+                    android:gravity="center"
+                    android:id="@+id/ipd_commit" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:id="@+id/ll_wu"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="20dp"
+                android:drawableTop="@mipmap/gwckt2x"
+                android:gravity="center"
+                android:text="购物车空空如也"
+                android:textColor="#030000"
+                android:textSize="15dp"
+
+                />
+
+            <TextView
+                android:id="@+id/ipdguanguan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="再忙，也得记得买点什么～"
+                android:textColor="#999999"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/quguanguan"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:text="去逛逛"
+                android:layout_gravity="center"
+                android:background="@mipmap/gwcsc2x"
+                android:gravity="center" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#F5F5F5"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="猜你喜欢"
+                android:textColor="#333333"
+                android:textSize="13dp" />
+            <LinearLayout
+                android:id="@+id/ipd_pay_ll"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                >
+                <com.mofanstore.util.Ipd_Gridview
+                    android:id="@+id/ipd_pay_grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    ></com.mofanstore.util.Ipd_Gridview>
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

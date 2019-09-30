@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <com.mofanstore.util.RoundImagecfView
+            android:layout_toRightOf="@+id/cb_agree1"
+            android:id="@+id/cart_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/xxlbt2x"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/cart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吊带连衣裙女夏小清新2019新款粉色格子裙法式仙女裙桔梗裙"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/cart_photo"
+            android:layout_marginTop="10dp"
+            />
+
+        <RatingBar
+            android:id="@+id/rb_normal"
+            android:layout_toRightOf="@id/cart_photo"
+            style="@style/roomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/cart_name"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:stepSize="1"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/tvcontext"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="left|top"
+            android:textColor="#666666"
+            android:textSize="12dp"
+            android:textColorHint="#999999"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:background="@null"
+            android:hint="您对该商品还满意吗？留下您的感受吧～（500字以内）"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f5f5f5"
+            ></View>
+
+    </LinearLayout>
+
+</LinearLayout>

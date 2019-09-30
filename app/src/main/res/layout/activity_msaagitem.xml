@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F4F4F4"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ipd_baiseback"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_telte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定手机号提醒"
+                android:textSize="13dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018.07.12 13:48"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="#999999"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_xtcontext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您还未绑定手机号，请尽快绑定手机号，以便享受更多的优质服务。"
+            android:textSize="12dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#999999"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout="@layout/activity_top2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ></include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="#F5F5F5"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="325dp"
+                        android:orientation="vertical"
+                        android:background="#3F3F3F"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            >
+                            <TextView
+                                android:id="@+id/title_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textSize="11dp"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:text="您已累计签到  20天"
+                                android:textColor="#FFFFFF"
+                                />
+
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:textSize="14dp"
+                                android:gravity="center"
+                                android:layout_centerInParent="true"
+                                android:text="2019年6月"
+                                android:textColor="#FFFFFF"
+                                />
+
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="日"
+                                android:textColor="#FFFFFF"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="一"
+                                android:textColor="#FFFFFF"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="二"
+                                android:textColor="#FFFFFF"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="三"
+                                android:textColor="#FFFFFF"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="四"
+                                android:textColor="#FFFFFF"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="五"
+                                android:textColor="#FFFFFF"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="六"
+                                android:textColor="#FFFFFF"
+                                />
+
+                        </LinearLayout>
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            >
+
+                            <com.codbking.calendar.CalendarLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <com.codbking.calendar.CalendarDateView
+                                    android:id="@+id/calendarDateView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    />
+                                <ListView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="#FFFFFF"
+                                    ></ListView>
+                            </com.codbking.calendar.CalendarLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/comnit2"
+                        android:layout_width="160dp"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="@mipmap/qdan2x"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="点击签到"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="签到规则"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#333333"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1、登录用户每天可签到1次，并领取奖励。"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#999999"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2、连续签到天数越长，获得的奖励越多。若连续签到中断，则重新计算天数。"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#999999"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3、每连续签到3天和7天，额外获得奖励。"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#999999"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4、如果出现用户违规行为，港拼有权立即终止其签到。"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#999999"
+                        />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+</LinearLayout>

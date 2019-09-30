@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:focusable="false"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="3人团，还差1人"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:textColor="#333333"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/tv_shopname" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="待成团"
+            android:textSize="12dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/tv_shopname2" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"
+        ></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_ock"
+        android:orientation="vertical"
+        >
+
+        <com.mofanstore.util.Ipd_Mylistview
+            android:id="@+id/cart_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#EAEAEA"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"></com.mofanstore.util.Ipd_Mylistview>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="right"
+        >
+
+        <TextView
+            android:id="@+id/chakan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付(含运费)：￥188.00"
+            android:textSize="12dp"
+            android:textColor="#333333"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/red_tv"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:text="详情"
+            android:textSize="12dp"
+            android:textColor="#333333"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@mipmap/ipd_myoderhuise"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"
+        ></View>
+</LinearLayout>

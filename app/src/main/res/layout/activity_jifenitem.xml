@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="95dp">
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:textColor="#333333"
+            android:text="兑换商品"
+            />
+        <LinearLayout
+            android:id="@+id/lltop"
+            android:layout_below="@+id/tv_username"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_userphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textSize="13dp"
+                android:textColor="#333333"
+                android:text="订单编号：201805090045367"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_usertime"
+            android:layout_below="@+id/lltop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            android:textSize="12dp"
+            android:textColor="#999999"
+            android:text="2018.05.09  14:40:23"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:text="+ 5000.00"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

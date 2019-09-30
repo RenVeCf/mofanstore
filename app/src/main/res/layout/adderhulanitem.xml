@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/ed_addername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="12dp"
+            android:background="@null"
+            android:textColor="#333333"
+            android:text="中国梦谷"
+            />
+        <TextView
+            android:id="@+id/ed_userdetail"
+            android:layout_below="@+id/ed_addername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="12dp"
+            android:background="@null"
+            android:textColor="#999999"
+            android:text="上海青浦华徐公路888号"
+            />
+        <ImageView
+            android:id="@+id/im_moren"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/zc_06"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F3F3F"
+        >
+        <FrameLayout
+            android:id="@+id/back"
+            android:layout_width="49dp"
+            android:layout_gravity="left"
+            android:layout_height="49dp">
+            <ImageView
+                android:id="@+id/tv_commiy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/syfltb2x"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/llousuo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center|left"
+            android:gravity="center|left"
+            android:background="@drawable/sousuobtm2"
+            >
+            <TextView
+                android:id="@+id/ed_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入关键词"
+                android:textSize="13dp"
+                android:textColorHint="#999999"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:drawableLeft="@mipmap/sstb2x"
+                android:textColor="#666666"
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        >
+
+        <com.github.jdsjlzx.recyclerview.LuRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <include layout="@layout/activity_top2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.mofanstore.util.Ipd_Mylistview
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvcar"
+            android:dividerHeight="10dp"
+            android:layout_marginBottom="50dp"
+            android:divider="#F5F5F5"
+            ></com.mofanstore.util.Ipd_Mylistview>
+
+        <Button
+            android:id="@+id/comnit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center|bottom"
+            android:gravity="center"
+            android:text="确认"
+            android:background="@mipmap/chunsebg"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </FrameLayout>
+</LinearLayout>
